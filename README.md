@@ -1,5 +1,5 @@
 # Javascript: Programs covering main concepts in Javascript
-This project helps to practice main concepts in Javascript by having example programs and to quickly refer whenever needed.  This is for users who already know Javascript and want to see example programs to practice and refer main concepts.
+This project helps to practice main concepts in Javascript by having example programs and to quickly refer whenever needed.  This is for users who already know Javascript and want to see example programs to practice and refer main concepts.  More topics will be added as needed.
 
 
 # Topics

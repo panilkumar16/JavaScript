@@ -2,20 +2,7 @@
 This project helps to practice main concepts in Javascript by having example programs and to quickly refer whenever needed.  This is for users who already know Javascript and want to see example programs to practice and refer main concepts.
 
 
-# Table of Contents
-1. [Author](#author)
-2. [Topics](#topics)
-
-
-<br><br>
-### <a name="author"></a>1. Author
-
-Anil Kumar P
-<br>
-<br>
-<br>
-
-### <a name="topics"></a>2. Topics
+# Topics
 
 1) Data Types and Variables
 2) Conditionals
@@ -23,7 +10,6 @@ Anil Kumar P
 4) Functions
 5) Arrays
 6) Objects
-
 
 <br>
 <br>

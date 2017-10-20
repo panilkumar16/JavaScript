@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="reverse_singly_linked_list.js">
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var node = new Node(0);
+        var newList = new LinkedList(node);
+
+        for(var i = 1; i < 10;i++){
+            newList.add(i);
+        }
+
+        document.write("Print original array: <br>");
+        newList.print();
+
+        newList.reverse();
+        document.write("Print reverse array: <br>");
+        newList.print();
+        document.write("Linked List Length = " + newList.length);
+
+    </script>
+</body>
+
+</html>

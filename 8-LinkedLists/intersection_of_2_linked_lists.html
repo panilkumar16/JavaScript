@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="../linked_list_prototype.js">
+    </script>
+    <script type="text/javascript" src="intersection_of_2_linked_lists.js">
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Create linked list 1
+        var node1 = new Node(5);
+        var newList1 = new LinkedList(node1);
+        newList1.add(3);
+        newList1.add(6);
+        newList1.add(9);
+        newList1.add(10);
+        newList1.add(16);
+        newList1.add(19);
+
+
+        // Create linked list 2
+        var node2 = new Node(30);
+        var newList2 = new LinkedList(node2);
+        newList2.add(12);
+        newList2.add(6);
+        newList2.add(10);
+        newList2.add(16);
+        newList2.add(19);
+
+        document.write("<b>Print original linked list 1: </b>");
+        document.write("<br>");
+        newList1.print();
+        
+        document.write("<b>Print original linked list 2: </b>");
+        document.write("<br>");
+        newList2.print();
+
+        let intersection = intersection_of_two_linked_lists(newList1.head,
+            newList2.head);
+            
+        var msg = "Test: Intersection of 2 linked lists head1=" +
+            newList1.head.data + " head2=" + newList2.head.data + " is " + 
+            intersection;
+        document.write("<br>");
+        document.write(msg.bold());
+        document.write("<br>");
+
+    </script>
+</body>
+
+</html>

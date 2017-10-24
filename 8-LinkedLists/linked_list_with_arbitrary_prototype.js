@@ -8,16 +8,11 @@ let NodeWithArbitraryPointer = function(data) {
     this.arb = null;
 }
 
+
 // Function for LinkedList with arbitrary pointer Prototype
 // Parameter is head node
 var LinkedListWithArbitraryPointer = function(head) {
     this.head = head;
-    // if (head) {
-    //     this.length = 1;
-    // }
-    // else {
-    //     this.length = 0;
-    // }
 };
 
 // Function Prototype to add a node at tail of LinkedList with arbitrary 
@@ -25,7 +20,6 @@ var LinkedListWithArbitraryPointer = function(head) {
 LinkedListWithArbitraryPointer.prototype.add = function(new_data){
     var thisnode = new NodeWithArbitraryPointer(new_data);
     var currentNode = this.head;
-    //this.length++;
 
     // If current is empty thisnode will be head
     if (!currentNode) {
@@ -67,7 +61,7 @@ LinkedListWithArbitraryPointer.prototype.print = function() {
             document.write(temp.data + " -> " + "null<br>");
         }
         else {
-            console.log(" -> " + temp.arb.data);
+            console.log(temp.data + " -> " + temp.arb.data);
             document.write(temp.data + " -> " + temp.arb.data + "<br>");
         }
 

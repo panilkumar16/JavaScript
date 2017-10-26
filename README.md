@@ -10,6 +10,7 @@ This project helps to practice main concepts in Javascript by having example pro
 4) Functions
 5) Arrays
 6) Objects
+7) Linked Lists
 
 <br>
 <br>

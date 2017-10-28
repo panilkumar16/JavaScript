@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="find_kth_permutation.js">
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Test1 
+        let input = [1, 2, 3];
+        let tempInput = input.slice();
+        let k = 3;
+        let result = [];
+
+        for(let i = -2; i < 8; i++) {
+            tempInput = input.slice();
+            result[0] = '';
+
+            document.write("<br><b>Test" + i +":</b><br>");
+            find_kth_permutation(tempInput, i, result);
+
+            let msg = "For input given " + input + " the " + i + " number permutation is " +
+                result;
+            document.write("<b>" + msg + "</b>");
+            document.write("<br>");
+        }
+        
+
+    </script>
+</body>
+
+</html>

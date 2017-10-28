@@ -4,13 +4,16 @@ This project helps to practice main concepts in Javascript by having example pro
 
 # Topics
 
-1) Data Types and Variables
-2) Conditionals
-3) Loops
-4) Functions
-5) Arrays
-6) Objects
-7) Linked Lists
+1) Introduction (This README)
+2) Data Types and Variables
+3) Conditionals
+4) Loops
+5) Functions
+6) Arrays
+7) Objects
+8) Linked Lists
+9) Math and Stats
+
 
 <br>
 <br>

@@ -75,6 +75,21 @@ let int_division_without_divide_operator = function(dividend, divisor) {
     if (divisor === 0) {
         return -1;
     }
+
+    let dividendNegative = false;
+    let divisorNegative = false;
+
+    // if dividend is negative numbers
+    if (dividend < 0) {
+        dividendNegative = true;
+        dividend = -dividend;
+    }
+
+    // if divisor is negative numbers
+    if (divisor < 0) {
+        divisorNegative = true;
+        divisor = -divisor;
+    }
     
     if (dividend < divisor) {
         return 0;
@@ -99,10 +114,16 @@ let int_division_without_divide_operator = function(dividend, divisor) {
     if (tempDivisor > dividend) {
         tempDivisor >>= 1;
         quotient >>= 1;
-        return quotient + int_division_without_divide_operator(
+        quotient += int_division_without_divide_operator(
             (dividend - tempDivisor), divisor);
     }
 
-    // This return happens when divisor is exactly divisible by dividend
-    return quotient;
+    // Return quotient based on negative or positive of dividend or divisor
+    if ((dividendNegative && divisorNegative) || 
+        (!dividendNegative && !divisorNegative)) {
+        return quotient;
+    } else if (dividendNegative || divisorNegative) {
+        return -quotient;
+    }
+    
 };

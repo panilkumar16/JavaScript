@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="../linked_list_prototype.js">
+    </script>
+    <script type="text/javascript" src="rotate_linked_list.js">
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Create linked list 1
+        var node1 = new Node(1);
+        var newList1 = new LinkedList(node1);
+        newList1.add(2);
+        newList1.add(3);
+        newList1.add(4);
+        newList1.add(5);
+
+        document.write("<b>Print original linked list 1: </b>");
+        document.write("<br>");
+        newList1.print();
+
+        let n = 4;
+        newList1.head = rotate_linked_list(newList1.head, n);
+            
+        var msg = "Test1: After rotating given linked list " + n + 
+            " times it looks like below: ";
+        document.write("<br>");
+        document.write(msg.bold());
+        document.write("<br>");
+        newList1.print();
+
+    </script>
+</body>
+
+</html>
